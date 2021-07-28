@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cheaky.shopping.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.cheaky.shopping.ui.register.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.cheaky.shopping.ui.home.HomeFragment"-->
+<!--        android:label="INICIO"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cheaky.shopping.ui.section.SectionFragment"
+        android:label="INICIO"
+        tools:layout="@layout/fragment_section" />
+    <fragment
+        android:id="@+id/costaFragment"
+        android:name="com.cheaky.shopping.ui.section.SectionFragment"
+        android:label="COSTA"
+        tools:layout="@layout/fragment_section" />
+    <fragment
+        android:id="@+id/sierraFragment"
+        android:name="com.cheaky.shopping.ui.section.SectionFragment"
+        android:label="SIERRA"
+        tools:layout="@layout/fragment_section" />
+    <fragment
+        android:id="@+id/selvaFragment"
+        android:name="com.cheaky.shopping.ui.section.SectionFragment"
+        android:label="SELVA"
+        tools:layout="@layout/fragment_section" />
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.cheaky.shopping.ui.shopping.ShoppingFragment"
+        android:label="Carrito de compra"
+        tools:layout="@layout/fragment_shopping" />
+    <action android:id="@+id/action_global_shoppingFragment" app:destination="@id/shoppingFragment" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.cheaky.shopping.ui.detail.DetailFragment"
+        android:label="Ingredientes"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="shipping"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment><action android:id="@+id/action_global_detailFragment" app:destination="@id/detailFragment"/>
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>

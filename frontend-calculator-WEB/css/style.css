@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body {font-size: 100%}
+
+h1 {text-align: center;}
+
+@media screen and (max-width: 64em) {
+h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 50em) {
+h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 30em){
+h1 {
+    font-size: 1.5em;
+  }
+}
+
+body{
+
+    background: rgb(216, 216, 216);
+    color:rgb(29, 29, 29);
+    background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+    font-family: "poppins";
+}
+.center {
+    color:rgb(202, 23, 23);
+    margin: auto;
+    margin-top: 130px;
+    width:  30%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 50px;
+}
+
+
+
+
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;    
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu{
+    float: left;
+    line-height: 100px;
+    
+    
+}
+.container .btn-menu label{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .menu a:hover{
+    border-bottom: 2px solid  #c7c7c7;
+    padding-bottom: 5px;
+}
+#btn-menu{
+    display: none;
+    
+}
+.container-menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+	height: 100vh;
+	top: 0;
+    left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar {
+    background: rgb(55, 101, 160);
+    margin:0;
+    color: white;
+    padding: 1.2em;    
+}
+
+
+/*para las imagenes*/
+
+.imagenes{
+             
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+}
+.imagene{
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.95);
+    transition: all 300ms;
+    position: relative;
+}
+.imagene::after{
+    content: "";
+    background-color: rgba(179, 229, 252, .1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+.imagene:hover:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.imagene:hover{
+    transform: scale(1.05);
+}
+.imagene-text{
+    padding: 1em;
+    background: rgba(83, 80, 80, 0.5);
+}
+.imagene-img{
+    max-width: 100%;
+    display: block;
+}
+
+/*para que se muestre uno a lado del otro*/
+@media screen and (min-width: 590px) {
+  
+    .imagenes{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+  @media screen and (min-width: 960px) {
+  
+    .imagenes{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+  }
+
+
+
+  
+/*para las tarjetas de las operaciones */
+  .operacion{
+    margin: 1em; 
+    width: 100%;
+    min-width: 10%;
+    max-width: 100%;
+    max-height: 290px;
+    padding: 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    align-items: center;
+    
+  }
+  .operacion input{
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px 0px;  
+    
+    text-decoration: none;
+      
+  }
+
+  .operacion-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+
+/*para los botones*/
+.button{
+    background: #201a35;
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 400px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #373c3c;
+    border-radius: 10px;
+}
+
+
+.love{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    
+    
+}

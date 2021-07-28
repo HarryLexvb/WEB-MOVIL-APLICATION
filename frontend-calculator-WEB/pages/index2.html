@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <div id="center">
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">   
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+        <title>examen</title>        
+
+    </head>   
+    
+    <body>
+        <header class="navbar">
+            <h1>FRONTEND PROJECT</h1>
+        </header> 
+
+        <div class="header">
+            <div class="container">
+                
+                <div class="btn-menu">
+                    <label for="btn-menu"><i class="fas fa-bars"></i></label>                             
+                </div>            
+            </div>
+
+        </div>
+        <div class="class=capa">
+    
+        <!-- tarjeta para las operaciones   -->
+
+        <div id="operacion-content" class="operacion-content">
+
+            <div class="operacion-container">                
+                <div class="operacion">
+                    <h2>Insertion Sort</h2>
+                    <h2>
+                        <p>
+                            <p><h3>Array of numbers:</h3></p>
+                            <input id="arr" placeholder=" Comma separated numbers"><br>
+                            
+                            <button class="button" onclick="insertion_sort()">Sort</button>
+                        </p>
+                        <p>
+                            <h3>result goes here: <span id="result"></span></h3>
+                        </p>
+                    </h2>
+                </div>               
+            </div>
+
+            <div class="operacion-container">                
+                <div class="operacion">
+                    <h2>Factorial</h2>
+                    <h2>
+                        <p>
+                            <p><h3>Number (betwen 1 and 6):</h3></p>
+                            <input id="num" placeholder=" Number"><br>
+                            <button class="button" onclick="factorial()">Calculate Factorial</button>
+                        </p>
+                        <p>
+                            <h3>result goes here: <span id="fact"></span></h3>
+                        </p>
+                    </h2>
+                </div>               
+            </div>
+
+            <div class="operacion-container">                
+                <div class="operacion">
+                    <h2>Fibonacci</h2>
+                    <h2>
+                        <p>
+                            <p><h3>Choose a number:</h3></p>
+                            <input id="Nume" placeholder=" Number"><br>
+                            <button class="button" onclick="fibonacci()">Calculate Fibonacci</button>
+                        </p>
+                        <p>
+                            <h3>result goes here: <span id="fibo"></span></h3>
+                        </p>
+                    </h2>
+                </div>               
+            </div>
+
+            <div class="operacion-container">                
+                <div class="operacion">
+                    <h2>Evaluation</h2>
+                    <h2>
+                        <p>
+                            <p><h3>Operacion:</h3></p>
+                            <input id="numero" placeholder=" Numbers"><br>
+                            <button class="button" onclick="evaluation()">Evaluate</button>
+                        </p>
+                        <p>
+                            <h3>result goes here: <span id="resul"></span></h3>
+                        </p>
+                    </h2>
+                </div>               
+            </div>
+        </div>
+
+        <!-- fin de tarjeta para las operaciones   -->
+
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href=../index.html a href="#">Team</a>
+                    <a href=pages/index2.html a href="#">Algoritmos</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+    </body>
+    <script src="../javascript/app.js"></script>
+        
+
+</html>

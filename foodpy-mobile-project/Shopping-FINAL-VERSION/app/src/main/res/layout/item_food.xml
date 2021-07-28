@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#212121"
+    app:cardCornerRadius="16dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:paddingVertical="22dp"
+        android:paddingHorizontal="12dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/naranja"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_add_shopping_cart_24"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:tint="@color/naranja" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_marginTop="12dp"
+    android:paddingVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewNameIngredient"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/checkBoxPrice1"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:button="@null"
+        android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <CheckBox
+        android:id="@+id/checkBoxPrice2"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:button="@null"
+        android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <CheckBox
+        android:id="@+id/checkBoxPrice3"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:button="@null"
+        android:drawableTop="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="4dp"
+        android:text="1"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

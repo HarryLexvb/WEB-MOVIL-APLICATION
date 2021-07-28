@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Insertion sort",
+      "setup": "npm install",
+      "run": "npm test -- -u -t=\"Insertion\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Factorial",
+      "setup": "npm install",
+      "run": "npm test -- -u -t=\"Factorial\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Fibonacci",
+      "setup": "npm install",
+      "run": "npm test -- -u -t=\"Fibonacci\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Evaluation",
+      "setup": "npm install",
+      "run": "npm test -- -u -t=\"Evaluation\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

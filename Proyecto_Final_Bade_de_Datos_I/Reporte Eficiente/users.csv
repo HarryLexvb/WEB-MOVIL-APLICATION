@@ -1,0 +1,6 @@
+"id";"name";"email";"contactno";"password";"shippingAddress";"shippingState";"shippingCity";"shippingPincode";"billingAddress";"billingState";"billingCity";"billingPincode";"regDate";"updationDate"
+"5";"alejandro";"alejandro@gmail.com";"987654321";"f6fdffe48c908deb0f4c3bd36c032e72";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"2021-12-15 11:58:20";NULL
+"6";"harry";"harry@gmail.com";"987654321";"21232f297a57a5a743894a0e4a801fc3";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"2021-12-15 12:03:36";NULL
+"7";"sergio";"sergio@gmail.com";"123456789";"21232f297a57a5a743894a0e4a801fc3";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"2021-12-15 12:37:19";NULL
+"8";"massiel";"massiel@gmail.com";"897654321";"21232f297a57a5a743894a0e4a801fc3";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"2021-12-15 20:54:52";NULL
+"9";"cled";"cled@gmail.com";"789654321";"21232f297a57a5a743894a0e4a801fc3";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"2021-12-15 20:55:21";NULL

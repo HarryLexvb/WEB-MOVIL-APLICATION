@@ -1,0 +1,6 @@
+"id";"userId";"productId";"quantity";"orderDate";"paymentMethod";"orderStatus"
+"17";"6";"1";"1";"2021-12-15 12:05:59";"COD";NULL
+"18";"8";"7";"1";"2021-12-15 20:57:21";"Internet Banking";NULL
+"19";"8";"8";"1";"2021-12-15 20:57:21";"Internet Banking";NULL
+"20";"8";"14";"1";"2021-12-15 20:57:21";"Internet Banking";NULL
+"21";"8";"15";"1";"2021-12-15 20:57:21";"Internet Banking";NULL
